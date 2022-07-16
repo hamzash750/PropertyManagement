@@ -1,0 +1,12 @@
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.ViewModel\bin\Debug\net5.0\PropertyManagement.ViewModel.deps.json
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.ViewModel\bin\Debug\net5.0\PropertyManagement.ViewModel.dll
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.ViewModel\bin\Debug\net5.0\ref\PropertyManagement.ViewModel.dll
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.ViewModel\bin\Debug\net5.0\PropertyManagement.ViewModel.pdb
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.ViewModel\obj\Debug\net5.0\PropertyManagement.ViewModel.csproj.AssemblyReference.cache
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.ViewModel\obj\Debug\net5.0\PropertyManagement.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.ViewModel\obj\Debug\net5.0\PropertyManagement.ViewModel.AssemblyInfoInputs.cache
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.ViewModel\obj\Debug\net5.0\PropertyManagement.ViewModel.AssemblyInfo.cs
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.ViewModel\obj\Debug\net5.0\PropertyManagement.ViewModel.csproj.CoreCompileInputs.cache
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.ViewModel\obj\Debug\net5.0\PropertyManagement.ViewModel.dll
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.ViewModel\obj\Debug\net5.0\ref\PropertyManagement.ViewModel.dll
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.ViewModel\obj\Debug\net5.0\PropertyManagement.ViewModel.pdb

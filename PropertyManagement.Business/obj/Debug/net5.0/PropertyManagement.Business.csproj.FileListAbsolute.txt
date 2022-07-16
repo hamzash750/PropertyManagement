@@ -1,0 +1,17 @@
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.Business\bin\Debug\net5.0\PropertyManagement.Business.deps.json
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.Business\bin\Debug\net5.0\PropertyManagement.Business.dll
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.Business\bin\Debug\net5.0\ref\PropertyManagement.Business.dll
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.Business\bin\Debug\net5.0\PropertyManagement.Business.pdb
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.Business\bin\Debug\net5.0\PropertyManagement.DAL.dll
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.Business\bin\Debug\net5.0\PropertyManagement.DAL.pdb
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.Business\obj\Debug\net5.0\PropertyManagement.Business.csproj.AssemblyReference.cache
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.Business\obj\Debug\net5.0\PropertyManagement.Business.GeneratedMSBuildEditorConfig.editorconfig
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.Business\obj\Debug\net5.0\PropertyManagement.Business.AssemblyInfoInputs.cache
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.Business\obj\Debug\net5.0\PropertyManagement.Business.AssemblyInfo.cs
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.Business\obj\Debug\net5.0\PropertyManagement.Business.csproj.CoreCompileInputs.cache
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.Business\obj\Debug\net5.0\PropertyManagement.Business.csproj.CopyComplete
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.Business\obj\Debug\net5.0\PropertyManagement.Business.dll
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.Business\obj\Debug\net5.0\ref\PropertyManagement.Business.dll
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.Business\obj\Debug\net5.0\PropertyManagement.Business.pdb
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.Business\bin\Debug\net5.0\PropertyManagement.ViewModel.dll
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.Business\bin\Debug\net5.0\PropertyManagement.ViewModel.pdb
