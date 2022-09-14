@@ -1,0 +1,15 @@
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.DAL\bin\Debug\net5.0\PropertyManagement.DAL.deps.json
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.DAL\bin\Debug\net5.0\PropertyManagement.DAL.runtimeconfig.json
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.DAL\bin\Debug\net5.0\PropertyManagement.DAL.runtimeconfig.dev.json
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.DAL\bin\Debug\net5.0\PropertyManagement.DAL.dll
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.DAL\bin\Debug\net5.0\ref\PropertyManagement.DAL.dll
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.DAL\bin\Debug\net5.0\PropertyManagement.DAL.pdb
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.DAL\obj\Debug\net5.0\PropertyManagement.DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.DAL\obj\Debug\net5.0\PropertyManagement.DAL.AssemblyInfoInputs.cache
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.DAL\obj\Debug\net5.0\PropertyManagement.DAL.AssemblyInfo.cs
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.DAL\obj\Debug\net5.0\PropertyManagement.DAL.csproj.CoreCompileInputs.cache
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.DAL\obj\Debug\net5.0\PropertyManagement.DAL.dll
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.DAL\obj\Debug\net5.0\ref\PropertyManagement.DAL.dll
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.DAL\obj\Debug\net5.0\PropertyManagement.DAL.pdb
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.DAL\obj\Debug\net5.0\PropertyManagement.DAL.genruntimeconfig.cache
+E:\Personal\PropertyMangement\PropertyManagement\PropertyManagement.DAL\obj\Debug\net5.0\PropertyManagement.DAL.csproj.AssemblyReference.cache
