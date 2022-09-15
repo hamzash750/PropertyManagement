@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit, AfterViewInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { AuthorizationService } from '../services/authorization.service';
 const url = 'assets/js/mymain.js';
 declare var $:any;
 @Component({
@@ -8,9 +9,10 @@ declare var $:any;
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit,AfterViewInit ,OnDestroy {
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder,private _AuthorizationService:AuthorizationService) { }
 
   registerForm = this.formBuilder.group({
+
     email: ['', [Validators.required, Validators.email]],
     password: ['', [Validators.required, Validators.minLength(6)]]}
 );
@@ -25,7 +27,10 @@ setTimeout(() => {
 }, 500);
   }
   userLogin():void{
-    console.log("Login User");
+    console.log(this.registerForm.value)
+    this._AuthorizationService.LoginUser(this.registerForm.value).subscribe(res=>{
+      console.log(res)
+    })
   }
   public loadScript() {
     let node = document.createElement('script');

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ETrader.DAL.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,6 @@ namespace ETrader.Business.Interface
 {
     public interface IUserService
     {
+        List<User> getAllAgent ();
     }
 }

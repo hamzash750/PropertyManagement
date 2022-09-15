@@ -1,0 +1,37 @@
+<section class="ct-u-paddingTop60 ct-u-paddingBottom30 text-center">
+    <div class="container">
+        <div class="ct-heading ct-u-marginBottom60">
+            <h3 class="text-uppercase">Our agents</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-3" *ngFor="let item of allAgent">
+                <div class="ct-personBox text-left">
+                    <div class="ct-imagePerson">
+                        <img src="https://localhost:44359/Agent/pic.png" alt="">
+                    </div>
+                    <div class="ct-personContent">
+                        <div class="ct-personName ct-u-paddingBottom10 ct-u-marginBottom20">
+                            <h5 class="ct-fw-600">{{item?.name}}</h5>
+                        </div>
+                        <div class="ct-personDescription">
+                            <ul class="list-unstyled ct-contactPerson">
+                            
+                                <li>
+                                    <i class="fa fa-mobile"></i>
+                                    <span>{{item?.phone}}</span>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-envelope-o"></i> {{item?.email}}</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-map-marker"></i> {{item?.address}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+</section>

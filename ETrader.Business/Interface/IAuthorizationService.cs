@@ -10,7 +10,7 @@ namespace ETrader.Business.Interface
     public interface IAuthorizationService
     {
         bool Regsiter(RegisterVM obj);
-        string Login(RegisterVM obj);
+        LoginUserVM Login(RegisterVM obj);
         UserVM UserDetails(int UId);
         bool checkAccessKey(string keyValue);
     }

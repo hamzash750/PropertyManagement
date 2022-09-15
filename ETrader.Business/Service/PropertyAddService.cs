@@ -24,6 +24,10 @@ namespace ETrader.Business.Service
         {
           return context.PropertyAds.ToList();
         }
+        public List<PropertyAds> getListofCategory(int catID)
+        {
+            return context.PropertyAds.Where(x=>x.CategoryId== catID).ToList();
+        }
         public PropertyAds GetPropertyDetails(int Id)
         {
             return context.PropertyAds.FirstOrDefault(x => x.Id == Id);
@@ -43,6 +47,11 @@ namespace ETrader.Business.Service
                               ReviewTittle=p.ReviewTittle
                           };
             return prodcut.ToList();
+        }
+
+        public List<PropertyCategory> getListOfPropertyCategory()
+        {
+            return context.PropertyCategorys.ToList();
         }
     }
 }

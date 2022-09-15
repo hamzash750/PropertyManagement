@@ -16,4 +16,13 @@ export class HomeServiceService {
   getPropertyReviews(id:number): Observable<propertyReview[]> {
     return this.http.get<propertyReview[]>('https://localhost:44359/Property/PropertyReviews?Id='+id);
   }
+  getAllPropertyCategory(): Observable<any> {
+    return this.http.get<any>('https://localhost:44359/GetAllPropertyCategory');
+  }
+  getAllAgent(): Observable<any> {
+    return this.http.get<any>('https://localhost:44359/GetAllAgent');
+  }
+  getCategoryProperty(id:number): Observable<propertyAdd[]> {
+    return this.http.get<propertyAdd[]>('https://localhost:44359/Property/PropertyCategoryList?Id='+id);
+  }
 }

@@ -12,6 +12,14 @@ import { HomeServiceService } from './services/home-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { PaymentComponent } from './payment/payment.component';
+import { PropertyCategoryComponent } from './property-category/property-category.component';
+import { ProperyListComponent } from './propery-list/propery-list.component';
+import { SellerAgentComponent } from './seller-agent/seller-agent.component';
+import { PropertSubmission1Component } from './propert-submission1/propert-submission1.component';
+import { PropertSubmission2Component } from './propert-submission2/propert-submission2.component';
+import { PropertSubmission3Component } from './propert-submission3/propert-submission3.component';
+import { PropertSubmissionComponent } from './propert-submission/propert-submission.component';
+import { PropertSubmission4Component } from './propert-submission4/propert-submission4.component';
 
 
 @NgModule({
@@ -23,7 +31,15 @@ import { PaymentComponent } from './payment/payment.component';
     CalculatorComponent,
     RecentlyReduceComponent,
     ProductDetailsComponent,
-    PaymentComponent
+    PaymentComponent,
+    PropertyCategoryComponent,
+    ProperyListComponent,
+    SellerAgentComponent,
+    PropertSubmission1Component,
+    PropertSubmission2Component,
+    PropertSubmission3Component,
+    PropertSubmissionComponent,
+    PropertSubmission4Component
   ],
   imports: [
     CommonModule,

@@ -12,7 +12,9 @@ namespace ETrader.Business.Interface
     {
 
         List<PropertyAds> getListofProperty();
+        List<PropertyAds> getListofCategory(int catID);
         PropertyAds GetPropertyDetails(int Id);
         List<ProductReviewsVM> GetProductReview(int Id);
+        List<PropertyCategory> getListOfPropertyCategory();
     }
 }

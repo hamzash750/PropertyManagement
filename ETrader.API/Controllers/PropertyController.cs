@@ -33,5 +33,11 @@ namespace ETrader.API.Controllers
             var propertyList = _propertyAddService.GetProductReview(Id);
             return Ok(propertyList);
         }
+        [HttpGet, Route("PropertyCategoryList")]
+        public IActionResult PropertyCategoryList(int Id)
+        {
+            var propertyList = _propertyAddService.getListofCategory(Id);
+            return Ok(propertyList);
+        }
     }
 }

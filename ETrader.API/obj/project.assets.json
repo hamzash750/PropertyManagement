@@ -5996,19 +5996,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MAQS\\.nuget\\packages\\": {}
+    "C:\\Users\\Hamza\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Personal\\PropertyMangement\\ETrader\\ETrader.API\\ETrader.API.csproj",
+      "projectUniqueName": "E:\\Khateeb\\PropertyManagement\\ETrader.API\\ETrader.API.csproj",
       "projectName": "ETrader.API",
-      "projectPath": "E:\\Personal\\PropertyMangement\\ETrader\\ETrader.API\\ETrader.API.csproj",
-      "packagesPath": "C:\\Users\\MAQS\\.nuget\\packages\\",
-      "outputPath": "E:\\Personal\\PropertyMangement\\ETrader\\ETrader.API\\obj\\",
+      "projectPath": "E:\\Khateeb\\PropertyManagement\\ETrader.API\\ETrader.API.csproj",
+      "packagesPath": "C:\\Users\\Hamza\\.nuget\\packages\\",
+      "outputPath": "E:\\Khateeb\\PropertyManagement\\ETrader.API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\MAQS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hamza\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6022,11 +6026,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\Personal\\PropertyMangement\\ETrader\\ETrader.Business\\ETrader.Business.csproj": {
-              "projectPath": "E:\\Personal\\PropertyMangement\\ETrader\\ETrader.Business\\ETrader.Business.csproj"
+            "E:\\Khateeb\\PropertyManagement\\ETrader.Business\\ETrader.Business.csproj": {
+              "projectPath": "E:\\Khateeb\\PropertyManagement\\ETrader.Business\\ETrader.Business.csproj"
             },
-            "E:\\Personal\\PropertyMangement\\ETrader\\ETrader.ViewModel\\ETrader.ViewModel.csproj": {
-              "projectPath": "E:\\Personal\\PropertyMangement\\ETrader\\ETrader.ViewModel\\ETrader.ViewModel.csproj"
+            "E:\\Khateeb\\PropertyManagement\\ETrader.ViewModel\\ETrader.ViewModel.csproj": {
+              "projectPath": "E:\\Khateeb\\PropertyManagement\\ETrader.ViewModel\\ETrader.ViewModel.csproj"
             }
           }
         }
@@ -6070,7 +6074,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

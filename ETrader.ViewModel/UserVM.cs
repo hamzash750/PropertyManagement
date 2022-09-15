@@ -11,4 +11,11 @@ namespace ETrader.ViewModel
         public string AccountType { get; set; }
         public string DateTime { get; set; }
     }
+    public class LoginUserVM
+    {
+        public string Name { get; set; }
+     
+        public string AccessKey { get; set; }
+        public string UserID { get; set; }
+    }
 }

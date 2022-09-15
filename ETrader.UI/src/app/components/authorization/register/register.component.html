@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <form role="form" class="ct-formRegister pull-right">
+                    <form role="form" [formGroup]="registerForm" class="ct-formRegister pull-right">
                         <div class="form-group">
                             <div class="ct-form--label--type2">
                                 <div class="ct-u-displayTableVertical">
@@ -63,23 +63,32 @@
                                 </div>
                             </div>
                             <div class="ct-form--item ct-u-marginBottom20">
+                                <label>Full Name</label>
+                                <input type="text" formControlName="name"  class="form-control input-lg" placeholder="">
+                            </div>
+                            <div class="ct-form--item ct-u-marginBottom20">
                                 <label>Your Email</label>
-                                <input type="text" required class="form-control input-lg" placeholder="">
+                                <input type="text" formControlName="email" class="form-control input-lg" placeholder="">
+                            </div>
+                            <div class="ct-form--item ct-u-marginBottom20">
+                                <label>Phone Number</label>
+                                <input type="text" formControlName="phone" class="form-control input-lg" placeholder="">
+                            </div>
+                            <div class="ct-form--item ct-u-marginBottom20">
+                                <label>Address</label>
+                                <input type="text" formControlName="address" class="form-control input-lg" placeholder="">
                             </div>
                             <div class="ct-form--item ct-u-marginBottom20">
                                 <label>Password</label>
-                                <input type="text" required class="form-control input-lg" placeholder="">
+                                <input type="text" formControlName="password" required class="form-control input-lg" placeholder="">
                             </div>
-                            <div class="ct-form--item ct-u-marginBottom20">
-                                <label>Repeat Password</label>
-                                <input type="text" required class="form-control input-lg" placeholder="">
-                            </div>
+                           
                             <div class="ct-form--item ct-u-marginBottom20">
                                 <label>Account Type</label>
-                                <select class="ct-js-select ct-select-lg">
-                                    <option value="month">Buyer</option>
-                                    <option value="January">Seller</option>
-                                    <option value="January">Visitor</option>
+                                <select (change)="changeAccountType($event)"  formControlName="accountType" class="form-control">
+                                    <option value="B">Buyer</option>
+                                    <option value="S">Seller</option>
+                                    <option value="V">Visitor</option>
                                 </select>
                             </div>
                             <div class="ct-form--item ct-u-marginBottom20">
@@ -91,7 +100,7 @@
                                 </div>
                             </div>
                             <div class="ct-form--item">
-                                <button type="submit" class="btn btn-warning center-block">Register Now</button>
+                                <button type="button" (click)="registerLogin()" class="btn btn-warning center-block">Register Now</button>
                             </div>
                         </div>
                     </form>

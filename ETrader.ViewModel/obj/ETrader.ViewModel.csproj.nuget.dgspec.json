@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Personal\\PropertyMangement\\ETrader\\ETrader.ViewModel\\ETrader.ViewModel.csproj": {}
+    "E:\\Khateeb\\PropertyManagement\\ETrader.ViewModel\\ETrader.ViewModel.csproj": {}
   },
   "projects": {
-    "E:\\Personal\\PropertyMangement\\ETrader\\ETrader.ViewModel\\ETrader.ViewModel.csproj": {
+    "E:\\Khateeb\\PropertyManagement\\ETrader.ViewModel\\ETrader.ViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Personal\\PropertyMangement\\ETrader\\ETrader.ViewModel\\ETrader.ViewModel.csproj",
+        "projectUniqueName": "E:\\Khateeb\\PropertyManagement\\ETrader.ViewModel\\ETrader.ViewModel.csproj",
         "projectName": "ETrader.ViewModel",
-        "projectPath": "E:\\Personal\\PropertyMangement\\ETrader\\ETrader.ViewModel\\ETrader.ViewModel.csproj",
-        "packagesPath": "C:\\Users\\MAQS\\.nuget\\packages\\",
-        "outputPath": "E:\\Personal\\PropertyMangement\\ETrader\\ETrader.ViewModel\\obj\\",
+        "projectPath": "E:\\Khateeb\\PropertyManagement\\ETrader.ViewModel\\ETrader.ViewModel.csproj",
+        "packagesPath": "C:\\Users\\Hamza\\.nuget\\packages\\",
+        "outputPath": "E:\\Khateeb\\PropertyManagement\\ETrader.ViewModel\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\MAQS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hamza\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

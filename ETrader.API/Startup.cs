@@ -34,6 +34,7 @@ namespace PropertyManagement.API
             sqlServerOptionsAction: sqlOptions => { sqlOptions.EnableRetryOnFailure(); }).EnableSensitiveDataLogging(true), ServiceLifetime.Scoped);
             services.AddTransient<IAuthorizationService, AuthorizationService>();
             services.AddTransient<IPropertyAddService, PropertyAddService>();
+            services.AddTransient<IUserService, UserService>();
             services.AddControllers();
             services.AddCors(o => o.AddPolicy("default", builder =>
             {

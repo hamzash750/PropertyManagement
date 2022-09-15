@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="ct-heading--main text-center">
+        <h3 class="text-uppercase ct-u-text--white" style="color: black;">Our Property Category</h3>
+    </div>
+</div>
+<section class="ct-u-paddingBoth70 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-8 col-lg-6" *ngFor="let item of propertyCategory">
+               <a href="/home/propertyList?category={{item?.id}}">
+                <div class="ct-priceBox text-center">
+                    <div class="ct-priceSection ct-fw-600 ct-u-text--white">
+                        <h4 class="text-uppercase">Category</h4>
+                        <div class="ct-pricebox ct-u-border--solid">
+                            <span class="ct-price" style="font-size: 20px;">{{item?.tittle}}</span>
+                        
+                        </div>
+                    </div>
+                  
+                </div>
+               </a>
+            </div>
+        </div>
+    </div>
+</section>

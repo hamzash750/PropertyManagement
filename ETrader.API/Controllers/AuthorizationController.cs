@@ -24,11 +24,11 @@ namespace ETrader.API.Controllers
         {
             if (_authorizationService.Regsiter(obj))
             {
-                return Ok("User Registeration Successfully");
+                return Ok();
             }
             else
             {
-                return NotFound("User Registeration Faild");
+                return NotFound();
             }
         }
         [HttpPost, Route("Login")]

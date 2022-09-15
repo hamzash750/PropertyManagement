@@ -29,6 +29,8 @@ namespace ETrader.Business.Service
                 user.Email = obj.Email;
                 user.Password = obj.Password;
                 user.UType = obj.AccountType;
+                user.Phone = obj.Phone;
+                user.Address = obj.Address;
                 var AddUser = context.Users.Add(user);
                 var SaveUser = context.SaveChanges();
                 if (SaveUser > 0)
@@ -46,23 +48,29 @@ namespace ETrader.Business.Service
                 return false;
             }
         }
-        public string Login(RegisterVM obj)
+        public LoginUserVM Login(RegisterVM obj)
         {
             try
             {
                 var FindUser = context.Users.FirstOrDefault(x => x.Email == obj.Email && x.Password == obj.Password);
                 if (FindUser != null)
                 {
-                    return this.configuration.GetSection("APIAccessKey").Value.ToString()+","+FindUser.Id;
+                    var user= new LoginUserVM();
+                    user.UserID = FindUser.Id.ToString();
+                    user.AccessKey = this.configuration.GetSection("APIAccessKey").Value.ToString();
+                    user.Name = FindUser.Name;
+                    return user;
+
+
                 }
                 else
                 {
-                    return "";
+                    return new LoginUserVM() ;
                 }
             }
             catch (Exception e)
             {
-                return "";
+                return new LoginUserVM();
 
             }
         }
