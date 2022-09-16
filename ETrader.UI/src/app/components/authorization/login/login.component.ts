@@ -30,6 +30,8 @@ setTimeout(() => {
     console.log(this.registerForm.value)
     this._AuthorizationService.LoginUser(this.registerForm.value).subscribe(res=>{
       console.log(res)
+      localStorage.setItem("userLogin",JSON.stringify(res))
+      location.href="/home"
     })
   }
   public loadScript() {

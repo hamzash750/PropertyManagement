@@ -20,6 +20,20 @@ import { PropertSubmission2Component } from './propert-submission2/propert-submi
 import { PropertSubmission3Component } from './propert-submission3/propert-submission3.component';
 import { PropertSubmissionComponent } from './propert-submission/propert-submission.component';
 import { PropertSubmission4Component } from './propert-submission4/propert-submission4.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PreviewAdsComponent } from './preview-ads/preview-ads.component';
+import { AgentPropertyComponent } from './agent-property/agent-property.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { BuyerPropertyComponent } from './buyer-property/buyer-property.component';
+import { PropertyFinderComponent } from './property-finder/property-finder.component';
+import { UserAreaComponent } from './user-area/user-area.component';
+import { UserfinderComponent } from './userfinder/userfinder.component';
+import { NewFinderrequestComponent } from './new-finderrequest/new-finderrequest.component';
+import { PropertyReviewsComponent } from './property-reviews/property-reviews.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { UserChatComponent } from './user-chat/user-chat.component';
+import { SenderFormComponent } from './sender-form/sender-form.component';
+import { PaymentSuccessfullyComponent } from './payment-successfully/payment-successfully.component';
 
 
 @NgModule({
@@ -39,12 +53,27 @@ import { PropertSubmission4Component } from './propert-submission4/propert-submi
     PropertSubmission2Component,
     PropertSubmission3Component,
     PropertSubmissionComponent,
-    PropertSubmission4Component
+    PropertSubmission4Component,
+    PreviewAdsComponent,
+    AgentPropertyComponent,
+    ContactUsComponent,
+    BuyerPropertyComponent,
+    PropertyFinderComponent,
+    UserAreaComponent,
+    UserfinderComponent,
+    NewFinderrequestComponent,
+    PropertyReviewsComponent,
+    UserDashboardComponent,
+    UserChatComponent,
+    SenderFormComponent,
+    PaymentSuccessfullyComponent
   ],
   imports: [
     CommonModule,
     HttpClientModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers:[HomeServiceService]
 })

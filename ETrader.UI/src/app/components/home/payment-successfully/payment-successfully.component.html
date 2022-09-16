@@ -1,0 +1,20 @@
+<header class="ct-mediaSection" data-stellar-background-ratio="0.3" data-height="140" data-type="parallax" data-bg-image="assets/images/content/agency-parallax.jpg" data-bg-image-mobile="assets/images/content/agency-parallax.jpg" style="min-height: 140px; height: 140px; background-image: url(&quot;assets/images/content/agency-parallax.jpg&quot;); background-position: 50% 50%;">
+    <div class="ct-mediaSection-inner">
+        <div class="container">
+            <div class="ct-heading--main text-center">
+                <h3 class="text-uppercase ct-u-text--white">Payment Request</h3>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="row ct-u-paddingBottom60" style="padding-top: 60px;">
+    <div class="col-sm-12">
+        <div class="list-group">
+            <a  class="list-group-item">
+                <h4 *ngIf="paymentSuccess" class="list-group-item-heading">Payment Successfully Done <i style="color: green;" class="fa fa-check-circle"></i></h4>
+                <h4 *ngIf="!paymentSuccess" class="list-group-item-heading">Please Wait Transaction in process.....</h4>
+            </a>
+           
+        </div>
+    </div>
+</div>

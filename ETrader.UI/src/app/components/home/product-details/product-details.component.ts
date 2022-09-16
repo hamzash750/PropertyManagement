@@ -19,12 +19,17 @@ export class ProductDetailsComponent implements OnInit,OnDestroy,AfterViewInit {
   ngOnInit(): void {
     this.invokeStripe();
     this.route.queryParams.subscribe(parm => {
-
       this._homeService.getPropertyDetails(Number(parm["id"])).subscribe(data=>{
         this.propertyDetails=data;
+        this.other=JSON.parse(this.propertyDetails?.otherAmenites)
       });
       this._homeService.getPropertyReviews(Number(parm["id"])).subscribe(data=>{
         this.allProductReviews=data;
+        if(localStorage.getItem("token")!=null){
+          let  token=JSON.parse(localStorage.getItem("token")?.toString()|| '{}');
+          this.makePaymentCall(token?.name,token?.token,token?.price,token?.sellerId);
+          localStorage.removeItem("token");
+        }
       });
     })
    
@@ -51,20 +56,41 @@ export class ProductDetailsComponent implements OnInit,OnDestroy,AfterViewInit {
   checkProductRating(rating:number=0){
  return rating;
   }
-  makePayment(amount: any) {
+  makePayment(amount: any,name:any,sellerId:any,propertyId:any) {
+    debugger
     const paymentHandler = (<any>window).StripeCheckout.configure({
       key: 'pk_test_IkAmCKSQYtx2e3fEBiCRW6dY00vJSeFT9k',
       locale: 'auto',
       token: function (stripeToken: any) {
-        console.log(stripeToken);
-        alert('Stripe token generated!');
+        let obj={
+          token:stripeToken?.id,
+          name:name,
+          price:(amount*100),
+          sellerId:sellerId,
+          propertyId:propertyId
+        };
+        localStorage.setItem("token",JSON.stringify(obj));
+        location.href="/home/paymentSuccessfully";
       },
     });
     paymentHandler.open({
-      name: 'Property Management',
-      description: 'Pay With Stripe',
+      name:name,
+      description: '',
       amount: amount * 100,
     });
+  }
+  other:any=[];
+  checkValue(value:string):boolean{
+    if(this.other!=undefined&&this.other!=null&& this.other.length>0){
+      if(this.other.findIndex((x: string)=>x==value)>=0){
+        return true;
+      }else{
+        return false;
+      }
+    }else{
+      return false;
+    }
+  
   }
   invokeStripe() {
     if (!window.document.getElementById('stripe-script')) {
@@ -85,4 +111,21 @@ export class ProductDetailsComponent implements OnInit,OnDestroy,AfterViewInit {
       window.document.body.appendChild(script);
     }
   }
+  makePaymentCall(name:string,token:string,amount:number,seller:string){
+    if(localStorage.getItem("userLogin")!=null){
+      let  user=JSON.parse(localStorage.getItem("userLogin")?.toString()|| '{}');
+      let obj={
+        product:name,
+        token:token,
+        amount:amount,
+        buyerId:user?.userID,
+        seller:seller
+      };
+      this._homeService.submitPayment(obj).subscribe(res=>{
+        console.log(res)
+      })
+    }
+   
+  }
+  
 }

@@ -1,7 +1,7 @@
 <app-header></app-header>
 <section>
     <div class="container">
-        <app-search></app-search>
-        <app-product></app-product>
+        <app-search (searchResultData)="searchResult($event)"></app-search>
+        <app-product [searchList]="searchListResult"></app-product>
     </div>
     </section>

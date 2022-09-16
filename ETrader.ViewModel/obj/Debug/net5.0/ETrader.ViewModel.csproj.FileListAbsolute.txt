@@ -46,3 +46,15 @@ E:\Khateeb\PropertyManagement\ETrader.ViewModel\obj\Debug\net5.0\ETrader.ViewMod
 E:\Khateeb\PropertyManagement\ETrader.ViewModel\obj\Debug\net5.0\ref\ETrader.ViewModel.dll
 E:\Khateeb\PropertyManagement\ETrader.ViewModel\obj\Debug\net5.0\ETrader.ViewModel.pdb
 E:\Khateeb\PropertyManagement\ETrader.ViewModel\obj\Debug\net5.0\ETrader.ViewModel.csprojAssemblyReference.cache
+E:\Personal\Khateeb\PropertyManagement\ETrader.ViewModel\bin\Debug\net5.0\ETrader.ViewModel.deps.json
+E:\Personal\Khateeb\PropertyManagement\ETrader.ViewModel\bin\Debug\net5.0\ETrader.ViewModel.dll
+E:\Personal\Khateeb\PropertyManagement\ETrader.ViewModel\bin\Debug\net5.0\ref\ETrader.ViewModel.dll
+E:\Personal\Khateeb\PropertyManagement\ETrader.ViewModel\bin\Debug\net5.0\ETrader.ViewModel.pdb
+E:\Personal\Khateeb\PropertyManagement\ETrader.ViewModel\obj\Debug\net5.0\ETrader.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+E:\Personal\Khateeb\PropertyManagement\ETrader.ViewModel\obj\Debug\net5.0\ETrader.ViewModel.AssemblyInfoInputs.cache
+E:\Personal\Khateeb\PropertyManagement\ETrader.ViewModel\obj\Debug\net5.0\ETrader.ViewModel.AssemblyInfo.cs
+E:\Personal\Khateeb\PropertyManagement\ETrader.ViewModel\obj\Debug\net5.0\ETrader.ViewModel.csproj.CoreCompileInputs.cache
+E:\Personal\Khateeb\PropertyManagement\ETrader.ViewModel\obj\Debug\net5.0\ETrader.ViewModel.dll
+E:\Personal\Khateeb\PropertyManagement\ETrader.ViewModel\obj\Debug\net5.0\ref\ETrader.ViewModel.dll
+E:\Personal\Khateeb\PropertyManagement\ETrader.ViewModel\obj\Debug\net5.0\ETrader.ViewModel.pdb
+E:\Personal\Khateeb\PropertyManagement\ETrader.ViewModel\obj\Debug\net5.0\ETrader.ViewModel.csproj.AssemblyReference.cache

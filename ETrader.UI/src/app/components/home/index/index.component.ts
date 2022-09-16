@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { propertyAdd } from '../models/propertyAdd';
 const url = 'assets/js/mymain.js';
 @Component({
   selector: 'app-index',
@@ -8,7 +9,7 @@ const url = 'assets/js/mymain.js';
 export class IndexComponent implements OnInit {
 
   constructor() { }
-
+  searchListResult: propertyAdd[] = [];;
   ngOnInit(): void {
     this.loadScript();
   }
@@ -19,5 +20,9 @@ export class IndexComponent implements OnInit {
     node.async = true;
     node.charset = 'utf-8';
     document.getElementsByTagName('head')[0].appendChild(node);
+}
+searchResult(data: any) {
+  this.searchListResult = data;
+
 }
 }

@@ -1,0 +1,33 @@
+<header class="ct-mediaSection" data-stellar-background-ratio="0.3" data-height="140" data-type="parallax" data-bg-image="assets/images/content/agency-parallax.jpg" data-bg-image-mobile="assets/images/content/agency-parallax.jpg" style="min-height: 140px; height: 140px; background-image: url(&quot;assets/images/content/agency-parallax.jpg&quot;); background-position: 50% 50%;">
+    <div class="ct-mediaSection-inner">
+        <div class="container">
+            <div class="ct-heading--main text-center">
+                <h3 class="text-uppercase ct-u-text--white">New Finder Request</h3>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="container">
+        <div class=" row">
+            <div class="col-md-12">
+                    <div class="form-group">
+                        <div class="ct-form--item ct-u-marginBottom20">
+                            <label>Request Title</label>
+                            <input [(ngModel)]="title" type="text" required class="form-control " placeholder="">
+                        </div>
+                        <div class="ct-form--item ct-u-marginBottom20">
+                            <label>Request Price</label>
+                            <input [(ngModel)]="price" type="number" required class="form-control " placeholder="">
+                        </div>
+                        <div class="ct-form--item ct-u-marginBottom20">
+                            <label>Request Description</label>
+                            <textarea [(ngModel)]="description" placeholder="Request Description" class="form-control " rows="4" ></textarea>
+                        </div>
+                        <div class="ct-form--item">
+                            <button type="button" (click)="saveRequest()" class="btn btn-warning center-block">Submit Request</button>
+                        </div>
+                    </div>
+               
+            </div>
+        </div>
+    </div>

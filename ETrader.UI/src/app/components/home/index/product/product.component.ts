@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { propertyAdd } from '../../models/propertyAdd';
 import { HomeServiceService } from '../../services/home-service.service';
 
@@ -8,13 +8,15 @@ import { HomeServiceService } from '../../services/home-service.service';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  public allProductList: propertyAdd[] = [];
   constructor(private _HomeServiceService:HomeServiceService) { }
-
+  public productList: propertyAdd[] = [];
+  @Input()set searchList(val: any) {
+  this.productList=val;
+}
   ngOnInit(): void {
     this._HomeServiceService.getAllProperty().subscribe(data=>{
       console.log(data);
-      this.allProductList=data;
+      this.productList=data;
     }
     ,error=>{
       console.log(error);

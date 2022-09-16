@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Khateeb\\PropertyManagement\\ETrader.DAL\\ETrader.DAL.csproj": {}
+    "E:\\Personal\\Khateeb\\PropertyManagement\\ETrader.DAL\\ETrader.DAL.csproj": {}
   },
   "projects": {
-    "E:\\Khateeb\\PropertyManagement\\ETrader.DAL\\ETrader.DAL.csproj": {
+    "E:\\Personal\\Khateeb\\PropertyManagement\\ETrader.DAL\\ETrader.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Khateeb\\PropertyManagement\\ETrader.DAL\\ETrader.DAL.csproj",
+        "projectUniqueName": "E:\\Personal\\Khateeb\\PropertyManagement\\ETrader.DAL\\ETrader.DAL.csproj",
         "projectName": "ETrader.DAL",
-        "projectPath": "E:\\Khateeb\\PropertyManagement\\ETrader.DAL\\ETrader.DAL.csproj",
-        "packagesPath": "C:\\Users\\Hamza\\.nuget\\packages\\",
-        "outputPath": "E:\\Khateeb\\PropertyManagement\\ETrader.DAL\\obj\\",
+        "projectPath": "E:\\Personal\\Khateeb\\PropertyManagement\\ETrader.DAL\\ETrader.DAL.csproj",
+        "packagesPath": "C:\\Users\\MAQS\\.nuget\\packages\\",
+        "outputPath": "E:\\Personal\\Khateeb\\PropertyManagement\\ETrader.DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Hamza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MAQS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -73,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

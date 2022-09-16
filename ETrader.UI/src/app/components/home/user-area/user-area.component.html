@@ -1,0 +1,47 @@
+<header class="ct-mediaSection" data-stellar-background-ratio="0.3" data-height="140" data-type="parallax" data-bg-image="assets/images/content/agency-parallax.jpg" data-bg-image-mobile="assets/images/content/agency-parallax.jpg" style="min-height: 140px; height: 140px; background-image: url(&quot;assets/images/content/agency-parallax.jpg&quot;); background-position: 50% 50%;">
+    <div class="ct-mediaSection-inner">
+        <div class="container">
+            <div class="ct-heading--main text-center">
+                <h3 class="text-uppercase ct-u-text--white">User Personal Area</h3>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="ct-u-paddingBoth70">
+    <div class="container">
+       
+        <div class="row ct-u-paddingTop70">
+            <div class="col-sm-12">
+                <div role="tabpanel">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                        <li role="presentation" class="active"><a href="#dashaboard" aria-controls="dashaboard" role="tab" data-toggle="tab" aria-expanded="false">Dashboard</a></li>
+                        <li role="presentation" class=""><a href="#saleproperty" aria-controls="saleproperty" role="tab" data-toggle="tab" aria-expanded="true">Sale Property </a></li>
+                        <li role="presentation" class=""><a href="#purchaseproperty" aria-controls="purchaseproperty" role="tab" data-toggle="tab" aria-expanded="false">Purchase Property</a></li>
+                        <li role="presentation" class=""><a href="#finderRequest" aria-controls="finderRequest" role="tab" data-toggle="tab" aria-expanded="false"> Finder Request</a></li>
+                        <li role="presentation" class=""><a href="#userchat" aria-controls="userchat" role="tab" data-toggle="tab" aria-expanded="false">User Chat</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                    <!-- Tab panes -->
+                    <div class="tab-content tab-content--withBorder">
+                        <div role="tabpanel" class="tab-pane active" id="dashaboard">
+                          <app-user-dashboard></app-user-dashboard>
+                          </div>
+                        <div role="tabpanel" class="tab-pane" id="saleproperty">
+                          <app-agent-property></app-agent-property>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="purchaseproperty">
+                            <app-buyer-property></app-buyer-property>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="finderRequest">
+                            <app-userfinder></app-userfinder>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="userchat">
+                            <app-user-chat></app-user-chat>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

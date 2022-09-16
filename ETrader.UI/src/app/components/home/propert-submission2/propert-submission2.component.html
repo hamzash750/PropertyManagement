@@ -50,69 +50,16 @@
             <div class="col-md-8 col-lg-6">
                 <form role="form" class="ct-formSubmission">
                     <div class="form-group ">
-                        <label class="ct-fw-600 text-uppercase ct-u-marginBottom10">Upload featured image</label>
+                        <label class="ct-fw-600 text-uppercase ct-u-marginBottom10">Upload  image</label>
                         <div class="row ct-u-marginBottom20">
                             <div class="col-md-7">
-                                <input type="text" required="" class="form-control input-lg ct-input--border" placeholder="">
-                            </div>
-                            <div class="col-md-5">
-                                <a class="btn btn-primary" href="">Browse</a>
-                                <a class="btn btn-warning pull-right" href="">Upload</a>
+                                <input type="file" (change)="onFileChange($event)" required="" class="form-control input-lg ct-input--border" placeholder="">
+                                <img [src]="imageSrc" *ngIf="imageSrc" style="height: 300px; width:500px">
                             </div>
                         </div>
                         <span class="ct-u-marginBottom40">This is going to be the main image of property, it will be shown in thumbnails and all important places.</span>
-                        <label class="ct-fw-600 text-uppercase ct-u-marginBottom10">upload images to gallery</label>
-                        <div class="row ct-u-marginBottom20">
-                            <div class="col-md-7">
-                                <input type="text" required="" class="form-control input-lg ct-input--border" placeholder="">
-                            </div>
-                            <div class="col-md-5">
-                                <a class="btn btn-primary" href="">Browse</a>
-                                <a class="btn btn-warning pull-right" href="">Upload</a>
-                            </div>
-                        </div>
-                        <span class="ct-u-marginBottom40">This is going to be the main image of property, it will be shown in thumbnails and all important places.</span>
-                        <ul class="list-unstyled ct-productBox--thumbnail ct-u-marginBottom50">
-                            <li>
-                                <div class="ct-media--left">
-                                    <a href="blog-single.html">
-                                        <img src="assets/images/content/gallery-thumbnail-1.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="ct-media--content">
-                                    <span>dsc0001223.jpg</span>
-                                    <a href="">
-                                        <i class="fa fa-trash-o"></i>Delete
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="ct-media--left">
-                                    <a href="blog-single.html">
-                                        <img src="assets/images/content/gallery-thumbnail-2.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="ct-media--content">
-                                    <span>dsc0001223.jpg</span>
-                                    <a href="">
-                                        <i class="fa fa-trash-o"></i>Delete
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="ct-media--left">
-                                    <a href="blog-single.html">
-                                        <img src="assets/images/content/gallery-thumbnail-4.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="ct-media--content">
-                                    <span>dsc0001223.jpg</span>
-                                    <a href="">
-                                        <i class="fa fa-trash-o"></i>Delete
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
+                      
+                        
                        
                     </div>
                 </form>

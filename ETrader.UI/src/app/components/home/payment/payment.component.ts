@@ -13,10 +13,11 @@ export class PaymentComponent implements OnInit {
   }
   makePayment(amount: any) {
     const paymentHandler = (<any>window).StripeCheckout.configure({
-      key: 'pk_test_51H7bbSE2RcKvfXD4DZhu',
+      key: 'pk_test_IkAmCKSQYtx2e3fEBiCRW6dY00vJSeFT9k',
       locale: 'auto',
       token: function (stripeToken: any) {
         console.log(stripeToken);
+        localStorage.setItem("Payment Token",stripeToken)
         alert('Stripe token generated!');
       },
     });
@@ -34,7 +35,7 @@ export class PaymentComponent implements OnInit {
       script.src = 'https://checkout.stripe.com/checkout.js';
       script.onload = () => {
         this.paymentHandler = (<any>window).StripeCheckout.configure({
-          key: 'pk_test_51H7bbSE2RcKvfXD4DZhu',
+          key: 'pk_test_IkAmCKSQYtx2e3fEBiCRW6dY00vJSeFT9k',
           locale: 'auto',
           token: function (stripeToken: any) {
             console.log(stripeToken);

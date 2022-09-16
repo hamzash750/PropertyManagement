@@ -6,7 +6,7 @@
                 <a href="search-list.html" class="pull-right"><i class="fa fa-angle-right"></i>View More</a>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-4" *ngFor="let item of allProductList">
+                <div class="col-sm-4 col-md-4 col-lg-3" *ngFor="let item of allProductList">
                     <div class="ct-itemProducts ct-u-marginBottom30 ct-hover">
                         <label class="control-label sale">
                             Sale
@@ -14,9 +14,9 @@
                         <a href="/home/detail?id={{item?.id}}">
                             <div class="ct-main-content">
                                 <div class="ct-imageBox">
-                                   <img src="https://localhost:44359/PropertyImages/{{item?.images}}" alt=""><i class="fa fa-eye"></i>
+                                   <img class="fx-image" src="{{item?.images}}" alt=""><i class="fa fa-eye"></i>
                                 </div>
-                                <div class="ct-main-text">
+                                <div class="ct-main-text" style="    height: 145px;">
                                     <div class="ct-product--tilte">
                                        {{item?.tittle | slice:0:30}}
                                     </div>

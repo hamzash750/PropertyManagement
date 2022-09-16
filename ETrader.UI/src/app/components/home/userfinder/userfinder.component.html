@@ -1,0 +1,17 @@
+
+<div class="row ct-u-paddingBottom60" style="padding-top: 60px;">
+    <div class="col-sm-12">
+        <a class="btn btn-success btn-sm" style="margin-bottom: 20px" href="/home/newRequest">Add New  Request</a><br>
+        <div class="list-group">
+            <a  class="list-group-item" *ngFor="let item of finderRequest">
+                <h4 class="list-group-item-heading">{{item?.title}}</h4>
+                <p class="list-group-item-text">{{item?.description}}</p>
+                <p class="list-group-item-text"><label class="label label-danger">Price Exception</label><i class="fa fa-credit-card"></i> {{item?.priceExpectations}}</p>
+                <p class="list-group-item-text"><label class="label label-success">Requester  Details</label><i class="fa fa-fw fa-user"></i> {{item?.userName}}  <i class="fa fa-fw fa-mobile"></i>{{item?.userPhone}}  <i class="fa fa-fw fa-at"></i>{{item?.userEmail}}</p>
+                <p class="list-group-item-text"><label class="label label-info">Publish Date </label><i class="fa fa-calendar"></i> {{item?.dateTime|date}}  </p>
+               <br> <button class="btn btn-danger" (click)="deleteReqeuset(item?.id)">Delete Requester</button>
+            </a>
+           
+        </div>
+    </div>
+</div>

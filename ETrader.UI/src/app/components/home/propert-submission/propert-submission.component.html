@@ -1,31 +1,48 @@
 
-<app-propert-submission1></app-propert-submission1>
+<ng-container *ngIf="firstForm">
+    <app-propert-submission1 [events]="eventsSubject.asObservable()"></app-propert-submission1>
 <div class="container">
     <div class="row">
         <div class="col-md-6">
             <div class="ct-container--Big text-right">
-                <a class="btn btn-warning" href="submission2.html">Continue to Step 2</a>
+                <button class="btn btn-warning"  (click)="stepTwo()">Continue to Step 2</button>
                  </div>
             </div>
     </div>
 </div>
+</ng-container>
 
+<ng-container *ngIf="secondForm">
+    <app-propert-submission2  [events]="eventsSubject.asObservable()"></app-propert-submission2>
+    <div class="container">
+        <div class="ct-container--Big">
+            <button class="btn btn-link pull-left" (click)="stepOne()">Back to Step 1</button>
+            <button class="btn btn-warning pull-right" (click)="stepThree()">Continue to Step 3</button>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</ng-container>
  
-<app-propert-submission2></app-propert-submission2>
-<div class="ct-container--Big">
-    <a class="btn btn-link pull-left" href="submission.html">Back to Step 1</a>
-    <a class="btn btn-warning pull-right" href="submission3.html">Continue to Step 3</a>
-    <div class="clearfix"></div>
+<ng-container *ngIf="thirdForm">
+    <app-propert-submission3 [events]="eventsSubject.asObservable()"></app-propert-submission3>
+<div class="container">
+    <div class="ct-container--Big">
+        <button class="btn btn-link pull-left" (click)="stepTwo()">Back to Step 2</button>
+        <button class="btn btn-warning pull-right" (click)="stepFour()">Continue to Step 4</button>
+        <div class="clearfix"></div>
+    </div>
 </div>
-<app-propert-submission3></app-propert-submission3>
-<div class="ct-container--Big">
-    <a class="btn btn-link pull-left" href="submission2.html">Back to Step 2</a>
-    <a class="btn btn-warning pull-right" href="submission4.html">Continue to Step 4</a>
-    <div class="clearfix"></div>
+</ng-container>
+
+<ng-container *ngIf="forthForm">
+    <app-propert-submission4></app-propert-submission4>
+<div class="container">
+    <div class="ct-container--Big">
+        <button class="btn btn-link pull-left" (click)="stepThree()">Back to Step 3</button>
+        <button type="button" (click)="saveProperty()" class="btn btn-success pull-right">Submit My Property</button>
+        <div class="clearfix"></div>
+    </div>
 </div>
-<app-propert-submission4></app-propert-submission4>
-<div class="ct-container--Big">
-    <a class="btn btn-link pull-left" href="submission3.html">Back to Step 3</a>
-    <button type="submit" class="btn btn-success pull-right">Submit My Property</button>
-    <div class="clearfix"></div>
-</div>
+</ng-container>
+
+

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { propertyAdd } from '../../../models/propertyAdd';
+import { HomeServiceService } from '../../../services/home-service.service';
 
 @Component({
   selector: 'app-recently-reduce',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecentlyReduceComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private _HomeServiceService:HomeServiceService) { }
+  public productList: propertyAdd[] = [];
   ngOnInit(): void {
+    this._HomeServiceService.getLatestProperty().subscribe(data=>{
+      console.log(data);
+      this.productList=data;
+    }
+    ,error=>{
+      console.log(error);
+    }
+    )
   }
+
 
 }

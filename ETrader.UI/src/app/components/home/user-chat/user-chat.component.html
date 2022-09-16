@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-sm-4">
+        <ul class="nav nav-tabs ct-nav--left" role="tablist">
+            <li *ngFor="let item of userChat,let i=index" role="presentation" [ngClass]="{'active': i==0}"><a (click)="showUserChat(item?.userId)"   role="tab" data-toggle="tab" aria-expanded="true">{{item?.userName}}</a></li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-sm-8">
+        <!-- Tab panes -->
+        <div class="tab-content tab-content--withBorder">
+            <div role="tabpanel" class="tab-pane active" id="history4">
+                <ng-container *ngFor="let item of userChatDetails">
+                    <p>{{item?.userChat}}</p>
+                    <label class="label label-info">{{item?.dateTime|date:"short"}} </label>
+                    <hr>
+                </ng-container>
+                <input type="text" [(ngModel)]="message" class="form-control" placeholder="Type Your Message....">
+                <button class="btn btn-primary btn-sm" (click)="sendMessage()">Send Message</button>
+            </div>
+        </div>
+    </div>
+</div>

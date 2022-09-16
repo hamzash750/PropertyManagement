@@ -1,12 +1,34 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ETrader.Business.Interface;
+using ETrader.DAL.Model;
+using ETrader.ViewModel;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace ETrader.API.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class PropertyReviewsController : Controller
     {
-        public IActionResult Index()
+        private readonly IPropertyAddService _propertyAddService;
+        private IConfiguration configuration;
+        public PropertyReviewsController(IPropertyAddService propertyAddService, IConfiguration configuration)
         {
-            return View();
+            _propertyAddService = propertyAddService;
+            this.configuration = configuration;
+        }
+
+        [HttpPost, Route("AddPropertyReview")]
+        public IActionResult AddPropertyReview(PropertyReviews obj)
+        {
+            if (_propertyAddService.postPropertyReview(obj) > 0)
+            {
+                return Ok();
+            }
+            else
+            {
+                return NotFound();
+            }
         }
     }
 }

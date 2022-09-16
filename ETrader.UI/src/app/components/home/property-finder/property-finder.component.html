@@ -1,0 +1,24 @@
+<header class="ct-mediaSection" data-stellar-background-ratio="0.3" data-height="140" data-type="parallax" data-bg-image="assets/images/content/agency-parallax.jpg" data-bg-image-mobile="assets/images/content/agency-parallax.jpg" style="min-height: 140px; height: 140px; background-image: url(&quot;assets/images/content/agency-parallax.jpg&quot;); background-position: 50% 50%;">
+    <div class="ct-mediaSection-inner">
+        <div class="container">
+            <div class="ct-heading--main text-center">
+                <h3 class="text-uppercase ct-u-text--white">Property Finder Request</h3>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="row ct-u-paddingBottom60" style="padding-top: 60px;">
+    <div class="col-sm-12">
+        <div class="list-group">
+            <a  class="list-group-item" *ngFor="let item of finderRequest">
+                <h4 class="list-group-item-heading">{{item?.title}}</h4>
+                <p class="list-group-item-text">{{item?.description}}</p>
+                <p class="list-group-item-text"><label class="label label-danger">Price Exception</label><i class="fa fa-credit-card"></i> {{item?.priceExpectations}}</p>
+                <p class="list-group-item-text"><label class="label label-success">Requester  Details</label><i class="fa fa-fw fa-user"></i> {{item?.userName}}  <i class="fa fa-fw fa-mobile"></i>{{item?.userPhone}}  <i class="fa fa-fw fa-at"></i>{{item?.userEmail}}</p>
+                <p class="list-group-item-text"><label class="label label-info">Publish Date </label><i class="fa fa-calendar"></i> {{item?.dateTime|date}}  </p>
+               <br> <button class="btn btn-primary btn-block">Contact Requester</button>
+            </a>
+           
+        </div>
+    </div>
+</div>

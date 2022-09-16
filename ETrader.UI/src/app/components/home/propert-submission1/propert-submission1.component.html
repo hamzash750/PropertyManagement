@@ -49,23 +49,14 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <form role="form" class="ct-formSubmission">
+                <form  [formGroup]="submissionForm" class="ct-formSubmission">
                     <div class="form-group ">
                         <label class="ct-fw-600 text-uppercase ct-u-marginBottom10">Title</label>
-                        <input type="text" required="" class="form-control input-lg ct-input--border ct-u-marginBottom40" placeholder="">
+                        <input type="text" formControlName="title" class="form-control input-lg ct-input--border ct-u-marginBottom40" placeholder="">
                         <label class="ct-fw-600 text-uppercase ct-u-marginBottom10">Address</label>
-                        <input type="text" required="" class="form-control input-lg ct-input--border ct-u-marginBottom10" placeholder="">
-                        <input type="text" required="" class="form-control input-lg ct-input--border ct-u-marginBottom40" placeholder="">
+                        <input type="text" formControlName="address" class="form-control input-lg ct-input--border ct-u-marginBottom10" placeholder="">
                         <label class="ct-fw-600 text-uppercase ct-u-marginBottom10">Property description</label>
-                        <textarea placeholder="" class="form-control input-lg ct-input--border ct-u-marginBottom40" name="field[]" required=""></textarea>
-                        <label class="ct-fw-600 text-uppercase ct-u-marginBottom10">Mark on map <span>You can drag &amp; drop marker</span></label>
-                        <div class="ct-js-googleMap ct-googleMap ct-js-googleMap--single ct-u-marginBottom20" data-offset="1" data-location="Richmond" data-icon="assets/images/marker-house.png" data-markerdraggable="true" data-zoom="14" data-height="500" id="map" style="min-height: 500px;"></div>
-                        <h5 class="ct-u-marginBottom10">GPS Data</h5>
-                        <div class="ct-latlngAuto">
-                            <input type="text" required="" class="form-control input-lg ct-input--border ct-u-marginBottom10 latidude" placeholder="Latidude">
-                            <input type="text" required="" class="form-control input-lg ct-input--border ct-u-marginBottom50 longitude" placeholder="Longitude">
-                        </div>
-                       
+                        <textarea placeholder="" class="form-control input-lg ct-input--border ct-u-marginBottom40" formControlName="description"></textarea>
                     </div>
                 </form>
             </div>

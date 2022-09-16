@@ -1,0 +1,59 @@
+<div class="ct-section--products">
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <div class="ct-heading ct-u-marginBottom30">
+                <h3 class="text-uppercase">Agent Property List</h3>
+                <a href="/home/category" class="pull-right"><i class="fa fa-angle-right"></i>View More</a>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-3" *ngFor="let item of allProductList">
+                    <div class="ct-itemProducts ct-u-marginBottom30 ct-hover">
+                        <label class="control-label sale" style="position: unset;">
+                           <button  (click)="deleteProperty(item?.id)" class="btn btn-primary btn-danger">Delete<i class="fa fa-times-circle"></i></button>
+                        </label>
+                        <label class="control-label" style="float: right;position: unset;">
+                            <button (click)="editProperty(item)" class="btn btn-primary btn-success">Edit<i class="fa fa-pencil-square"></i></button>
+                         </label>
+                        <a href="/home/detail?id={{item?.id}}">
+                            <div class="ct-main-content">
+                                <div class="ct-imageBox">
+                                   <img class="fx-image" src="{{item?.images}}" alt=""><i class="fa fa-eye"></i>
+                                </div>
+                                <div class="ct-main-text" style="    height: 145px;">
+                                    <div class="ct-product--tilte">
+                                       {{item?.tittle | slice:0:30}}
+                                    </div>
+                                    <div class="ct-product--price">
+                                        <!-- <span class="ct-price--Old">$ 450,000</span> -->
+                                        <span>Pkr      {{item?.price}}</span>
+                                    </div>
+                                    <div class="ct-product--description">
+                                        {{item?.description | slice:0:50}}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ct-product--meta">
+                                <div class="ct-icons">
+                                    <span>
+                                        <i class="fa fa-bed"></i> 
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-cutlery"></i> 
+                                    </span>
+                                </div>
+                                <div class="ct-text">
+                                    <span> Area: <span> {{item?.areaUnit}}  {{item?.area}}</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-3" *ngIf="allProductList.length==0">
+                    <h4  >No Data Available </h4>
+                </div>
+              
+            </div>
+        </div>
+       
+    </div>
+</div>

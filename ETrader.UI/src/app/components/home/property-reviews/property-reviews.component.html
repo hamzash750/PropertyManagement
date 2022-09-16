@@ -1,0 +1,41 @@
+
+    <header class="ct-mediaSection" data-stellar-background-ratio="0.3" data-height="140" data-type="parallax" data-bg-image="assets/images/content/agency-parallax.jpg" data-bg-image-mobile="assets/images/content/agency-parallax.jpg" style="min-height: 140px; height: 140px; background-image: url(&quot;assets/images/content/agency-parallax.jpg&quot;); background-position: 50% 50%;">
+        <div class="ct-mediaSection-inner">
+            <div class="container">
+                <div class="ct-heading--main text-center">
+                    <h3 class="text-uppercase ct-u-text--white">New Property Reviews </h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class=" row">
+            <div class="col-md-12">
+                    <div class="form-group">
+                        <div class="ct-form--item ct-u-marginBottom20">
+                            <label>Reviews Title</label>
+                            <input [(ngModel)]="title" type="text" required class="form-control " placeholder="">
+                        </div>
+                        <div class="ct-form--item ct-u-marginBottom20">
+                            <label>Reviews Rating</label>
+                            <select [(ngModel)]="rate"  class="form-control fx_dropdown" tabindex="-1" title="">
+                                <option value="-">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="ct-form--item ct-u-marginBottom20">
+                            <label>Reviews Description</label>
+                            <textarea [(ngModel)]="description" placeholder="Reviews Description" class="form-control " rows="4" ></textarea>
+                        </div>
+                        <div class="ct-form--item">
+                            <button type="button" (click)="saveRequest()" class="btn btn-warning center-block">Submit Request</button>
+                        </div>
+                    </div>
+               
+            </div>
+        </div>
+    </div>
