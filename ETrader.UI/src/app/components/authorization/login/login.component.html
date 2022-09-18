@@ -74,6 +74,7 @@
                             </div>
                             <div class="ct-form--item">
                                 <button type="button" (click)="userLogin()" class="btn btn-warning center-block">Login</button>
+                                <label *ngIf="showLabel" class="label" style="color: red">Login Failed</label>
                             </div>
                         </div>
                     </form>

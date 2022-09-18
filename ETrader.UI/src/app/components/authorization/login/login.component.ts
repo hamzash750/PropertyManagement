@@ -26,12 +26,18 @@ setTimeout(() => {
   this.loadScript();
 }, 500);
   }
+  showLabel=false;
   userLogin():void{
     console.log(this.registerForm.value)
     this._AuthorizationService.LoginUser(this.registerForm.value).subscribe(res=>{
-      console.log(res)
-      localStorage.setItem("userLogin",JSON.stringify(res))
-      location.href="/home"
+      if(res?.userID!=null){
+        this.showLabel=false;
+        localStorage.setItem("userLogin",JSON.stringify(res))
+        location.href="/home"
+      }else{
+        this.showLabel=true;
+      }
+      
     })
   }
   public loadScript() {
