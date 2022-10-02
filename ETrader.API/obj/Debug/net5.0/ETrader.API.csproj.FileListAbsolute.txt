@@ -331,3 +331,4 @@ E:\Personal\Khateeb\PropertyManagement\ETrader.API\obj\Debug\net5.0\ref\ETrader.
 E:\Personal\Khateeb\PropertyManagement\ETrader.API\obj\Debug\net5.0\ETrader.API.pdb
 E:\Personal\Khateeb\PropertyManagement\ETrader.API\obj\Debug\net5.0\ETrader.API.genruntimeconfig.cache
 E:\Personal\Khateeb\PropertyManagement\ETrader.API\bin\Debug\net5.0\Stripe.net.dll
+E:\Khateeb\PropertyManagement\ETrader.API\bin\Debug\net5.0\Stripe.net.dll

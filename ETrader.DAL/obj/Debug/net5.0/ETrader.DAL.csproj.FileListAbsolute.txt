@@ -56,7 +56,6 @@ E:\Khateeb\PropertyManagement\ETrader.DAL\obj\Debug\net5.0\ETrader.DAL.dll
 E:\Khateeb\PropertyManagement\ETrader.DAL\obj\Debug\net5.0\ref\ETrader.DAL.dll
 E:\Khateeb\PropertyManagement\ETrader.DAL\obj\Debug\net5.0\ETrader.DAL.pdb
 E:\Khateeb\PropertyManagement\ETrader.DAL\obj\Debug\net5.0\ETrader.DAL.genruntimeconfig.cache
-E:\Khateeb\PropertyManagement\ETrader.DAL\obj\Debug\net5.0\ETrader.DAL.csprojAssemblyReference.cache
 E:\Personal\Khateeb\PropertyManagement\ETrader.DAL\bin\Debug\net5.0\ETrader.DAL.deps.json
 E:\Personal\Khateeb\PropertyManagement\ETrader.DAL\bin\Debug\net5.0\ETrader.DAL.runtimeconfig.json
 E:\Personal\Khateeb\PropertyManagement\ETrader.DAL\bin\Debug\net5.0\ETrader.DAL.runtimeconfig.dev.json
@@ -72,3 +71,4 @@ E:\Personal\Khateeb\PropertyManagement\ETrader.DAL\obj\Debug\net5.0\ref\ETrader.
 E:\Personal\Khateeb\PropertyManagement\ETrader.DAL\obj\Debug\net5.0\ETrader.DAL.pdb
 E:\Personal\Khateeb\PropertyManagement\ETrader.DAL\obj\Debug\net5.0\ETrader.DAL.genruntimeconfig.cache
 E:\Personal\Khateeb\PropertyManagement\ETrader.DAL\obj\Debug\net5.0\ETrader.DAL.csproj.AssemblyReference.cache
+E:\Khateeb\PropertyManagement\ETrader.DAL\obj\Debug\net5.0\ETrader.DAL.csprojAssemblyReference.cache

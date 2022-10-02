@@ -4069,7 +4069,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 /****Top Bar*****/
 .ct-topBar {
   font-size: 12px;
-  background-color: #fff;
+  background-color: rgb(40, 117, 175);
   line-height: 30px;
   font-weight: bold;
   position: relative;
@@ -4095,7 +4095,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   width: 100px;
   padding: 5px 0 5px 0;
   height: 40px;
-  background-color: #fff;
+  background-color: rgb(40, 117, 175);
 }
 .ct-topBar .ct-input--search::-webkit-input-placeholder {
   color: #c1c1c1;
@@ -5589,9 +5589,9 @@ form input {
   line-height: 1.2;
   border: 2px solid #5c5c5c;
   border-radius: 3px;
-  background-color: #333333;
+  background-color: #FFFFFF;
   box-shadow: none;
-  color: #999999;
+  color: #2f2727;
   display: inline-block;
   height: 40px;
 }

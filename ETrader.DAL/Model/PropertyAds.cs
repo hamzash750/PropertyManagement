@@ -34,8 +34,6 @@ namespace ETrader.DAL.Model
     }
     public class PropertyAdsVM
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public string Tittle { get; set; }
         public string Images { get; set; }
