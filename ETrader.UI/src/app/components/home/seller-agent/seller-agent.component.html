@@ -5,7 +5,7 @@
         </div>
         <div class="row">
             <div class="col-sm-6 col-md-3" *ngFor="let item of allAgent">
-                <div class="ct-personBox text-left">
+                <div class="ct-personBox text-left" style="margin: 10px;">
                     <div class="ct-imagePerson">
                         <img src="https://localhost:44359/Agent/pic.png" alt="">
                     </div>
@@ -13,7 +13,7 @@
                         <div class="ct-personName ct-u-paddingBottom10 ct-u-marginBottom20">
                             <h5 class="ct-fw-600">{{item?.name}}</h5>
                         </div>
-                        <div class="ct-personDescription">
+                        <div class="ct-personDescription" >
                             <ul class="list-unstyled ct-contactPerson">
                             
                                 <li>
@@ -24,7 +24,7 @@
                                     <a href=""><i class="fa fa-envelope-o"></i> {{item?.email}}</a>
                                 </li>
                                 <li>
-                                    <a href=""><i class="fa fa-map-marker"></i> {{item?.address}}</a>
+                                    <a href=""><i class="fa fa-map-marker"></i> {{item?.address| slice:1:10}}</a>
                                 </li>
                             <a href="/home/sellerReviews?id={{item?.id}}" class="btn btn-info btn-sm">View Reviews</a>
                             </ul>

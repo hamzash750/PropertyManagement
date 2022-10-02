@@ -41,7 +41,8 @@ namespace ETrader.DAL
                new PropertyCategory() { Id = 2, Tittle = "Houses", PropertyTypeId = 1 },
                  new PropertyCategory() { Id = 3, Tittle = "Apartments & Flats", PropertyTypeId = 1 },
                  new PropertyCategory() { Id =4, Tittle = "Shop - Offices - Commercial Space", PropertyTypeId = 2 },
-                   new PropertyCategory() { Id = 5, Tittle = "Portions & Floors", PropertyTypeId = 2 }
+                   new PropertyCategory() { Id = 5, Tittle = "Portions & Floors", PropertyTypeId = 2 },
+                   new PropertyCategory() { Id = 6, Tittle = "Property for Rent", PropertyTypeId = 2 }
               );
             modelBuilder.Entity<PropertyAds>().HasData(
                new PropertyAds() { Id = 1,Tittle= "5 Marla Double Story House Is Available For Sale",Area=5,AreaUnit= "Marla",CategoryId=2,Quantity=20,Location= "SAN FRANCISCO, CA 55689",

@@ -75,7 +75,7 @@ export class ProductDetailsComponent implements OnInit,OnDestroy,AfterViewInit {
       },
     });
     paymentHandler.open({
-      name:name,
+      name:"Enter Card Details",
       description: '',
       amount: amount * 100,
     });

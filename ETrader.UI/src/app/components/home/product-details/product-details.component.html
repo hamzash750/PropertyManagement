@@ -75,7 +75,7 @@
                                         <span class="ct-fw-600">Price</span>
                                     </div>
                                     <div class="ct-u-displayTableCell text-right">
-                                        <span class="ct-price">PKR {{propertyDetails?.price}}</span>
+                                        <span class="">PKR {{propertyDetails?.price}}</span>
                                     </div>
                                 </div>
                                 <div class="ct-u-displayTableRow">
@@ -137,93 +137,83 @@
                             </div>
                         </div>
                         <div class="col-md-8">
-                            <div class="ct-heading ct-u-marginBottom20">
-                                
-                                <h3 class="text-uppercase">Description</h3>
-                            </div>
-                            <p class="ct-u-marginBottom20">
-                                {{propertyDetails?.description}}
-                            </p>
-                            <div class="ct-heading ct-u-marginBottom20">
-                                <h3 class="text-uppercase">Property Details</h3>
-                            </div>
-                            <div class="ct-u-displayTableVertical ct-productDetails--type2 ct-u-marginBottom20">
-                                <div class="ct-u-displayTableCell">
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <i class="fa" [ngClass]="{'fa-check-circle': checkValue('Air Conditioning'),'fa-times-circle negative':!checkValue('Air Conditioning')}"></i>
-                                            <span class="text-capitalize">air conditioning</span>
-                                        </li>
-                                        <li>
-                                            <i class="fa" [ngClass]="{'fa-check-circle': checkValue('ADSL Cable'),'fa-times-circle negative':!checkValue('ADSL Cable')}"></i>
-                                            <span class="text-capitalize">ADSL cable</span>
-                                        </li>
-                                        <li>
-                                            <i class="fa" [ngClass]="{'fa-check-circle': checkValue('WiFi'),'fa-times-circle negative':!checkValue('WiFi')}"></i>
-                                            <span class="text-capitalize">WiFi</span>
-                                        </li>
-                                        <li>
-                                            <i class="fa" [ngClass]="{'fa-check-circle': checkValue('HiFi Audio'),'fa-times-circle negative':!checkValue('HiFi Audio')}"></i>
-                                            <span class="text-capitalize">HiFi audio</span>
-                                        </li>
-                                        <li>
-                                            <i class="fa" [ngClass]="{'fa-check-circle': checkValue('Fridge'),'fa-times-circle negative':!checkValue('Fridge')}"></i>
-                                            <span class="text-capitalize">fridge</span>
-                                        </li>
-                                        <li>
-                                            <i class="fa" [ngClass]="{'fa-check-circle': checkValue('Grill'),'fa-times-circle negative':!checkValue('Grill')}"></i>
-                                            <span class="text-capitalize">grill</span>
-                                        </li>
-                                    </ul>
+                            <div style="    padding-left: 75px;">
+                                <div class="ct-heading ct-u-marginBottom20">
+                                    
+                                    <h3 class="text-uppercase">Description</h3>
                                 </div>
-                                <div class="ct-u-displayTableCell">
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <i class="fa" [ngClass]="{'fa-check-circle': checkValue('Full HD TV'),'fa-times-circle negative':!checkValue('Full HD TV')}"></i>
-                                            <span class="text-capitalize">Full HD TV</span>
-                                        </li>
-                                        <li>
-                                            <i class="fa" [ngClass]="{'fa-check-circle': checkValue('Digital Antenna'),'fa-times-circle negative':!checkValue('Digital Antenna')}"></i>
-                                            <span class="text-capitalize">Digital antenna</span>
-                                        </li>
-                                        <li>
-                                            <i class="fa" [ngClass]="{'fa-check-circle': checkValue('Kitchen With Island'),'fa-times-circle negative':!checkValue('Kitchen With Island')}"></i>
-                                            <span>Kitchen with Island</span>
-                                        </li>
-                                        <li>
-                                            <i class="fa" [ngClass]="{'fa-check-circle': checkValue('Exotic Garde'),'fa-times-circle negative':!checkValue('Exotic Garde')}"></i>
-                                            <span class="text-capitalize">exotic garden</span>
-                                        </li>
-                                        <li>
-                                            <i class="fa" [ngClass]="{'fa-check-circle': checkValue('Guest House'),'fa-times-circle negative':!checkValue('Guest House')}"></i>
-                                            <span class="text-capitalize">guest house</span>
-                                        </li>
-                                    </ul>
+                                <p class="ct-u-marginBottom20">
+                                    {{propertyDetails?.description}}
+                                </p>
+                                <div class="ct-heading ct-u-marginBottom20">
+                                    <h3 class="text-uppercase">Property Details</h3>
                                 </div>
+                                <div class="ct-u-displayTableVertical ct-productDetails--type2 ct-u-marginBottom20">
+                                    <div class="ct-u-displayTableCell">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <i class="fa" [ngClass]="{'fa-check-circle': checkValue('Air Conditioning'),'fa-times-circle negative':!checkValue('Air Conditioning')}"></i>
+                                                <span class="text-capitalize">air conditioning</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa" [ngClass]="{'fa-check-circle': checkValue('ADSL Cable'),'fa-times-circle negative':!checkValue('ADSL Cable')}"></i>
+                                                <span class="text-capitalize">ADSL cable</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa" [ngClass]="{'fa-check-circle': checkValue('WiFi'),'fa-times-circle negative':!checkValue('WiFi')}"></i>
+                                                <span class="text-capitalize">WiFi</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa" [ngClass]="{'fa-check-circle': checkValue('HiFi Audio'),'fa-times-circle negative':!checkValue('HiFi Audio')}"></i>
+                                                <span class="text-capitalize">HiFi audio</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa" [ngClass]="{'fa-check-circle': checkValue('Fridge'),'fa-times-circle negative':!checkValue('Fridge')}"></i>
+                                                <span class="text-capitalize">fridge</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa" [ngClass]="{'fa-check-circle': checkValue('Grill'),'fa-times-circle negative':!checkValue('Grill')}"></i>
+                                                <span class="text-capitalize">grill</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="ct-u-displayTableCell">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <i class="fa" [ngClass]="{'fa-check-circle': checkValue('Full HD TV'),'fa-times-circle negative':!checkValue('Full HD TV')}"></i>
+                                                <span class="text-capitalize">Full HD TV</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa" [ngClass]="{'fa-check-circle': checkValue('Digital Antenna'),'fa-times-circle negative':!checkValue('Digital Antenna')}"></i>
+                                                <span class="text-capitalize">Digital antenna</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa" [ngClass]="{'fa-check-circle': checkValue('Kitchen With Island'),'fa-times-circle negative':!checkValue('Kitchen With Island')}"></i>
+                                                <span>Kitchen with Island</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa" [ngClass]="{'fa-check-circle': checkValue('Exotic Garde'),'fa-times-circle negative':!checkValue('Exotic Garde')}"></i>
+                                                <span class="text-capitalize">exotic garden</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa" [ngClass]="{'fa-check-circle': checkValue('Guest House'),'fa-times-circle negative':!checkValue('Guest House')}"></i>
+                                                <span class="text-capitalize">guest house</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                               
+                                <div class="ct-heading ct-u-marginBottom20">
+                                    <button *ngIf="propertyDetails?.category=='Property for Rent'" (click)="makePayment(propertyDetails?.price,propertyDetails?.tittle,propertyDetails?.sellerId,propertyDetails?.id)" class="btn btn-success btn-block">Pay PKR {{propertyDetails?.price}}</button>
+                              <br><br>
+                        
+                                </div>
+                    
+                    
+                                <!-- <div class="ct-js-googleMap ct-googleMap ct-js-googleMap--single" data-offset="1" data-location="Richmond" data-icon="assets/images/marker-house.png" data-zoom="14" data-height="260" id="map"></div> -->
                             </div>
-                           
-                            <div class="ct-heading ct-u-marginBottom20">
-                                <button *ngIf="propertyDetails?.category=='Property for Rent'" (click)="makePayment(propertyDetails?.price,propertyDetails?.tittle,propertyDetails?.sellerId,propertyDetails?.id)" class="btn btn-success btn-block">Pay PKR {{propertyDetails?.price}}</button>
-                          <br><br>
-                                <h3 class="text-uppercase">Agents Reviews</h3>
-                            </div>
-                <ng-container *ngFor="let item of allProductReviews">
-                    <span> <i class="fa fa-user"></i>{{item?.user}}</span>
-                    <div class="progress-icons" data-font-size="10" data-icon-color="#eb8a21" data-active="5" data-total="8" data-icon="fa-trophy" data-delay="400" style="font-size: 14px;">
-                        <i  class="fa fa-star" [ngStyle]="{'color':checkProductRating(item?.rate)>=1?'rgb(235, 138, 33)':''}"></i>
-                         <i class="fa fa-star" [ngStyle]="{'color':checkProductRating(item?.rate)>=2?'rgb(235, 138, 33)':''}"></i>
-                          <i class="fa fa-star" [ngStyle]="{'color':checkProductRating(item?.rate)>=3?'rgb(235, 138, 33)':''}"></i>
-                           <i class="fa fa-star" [ngStyle]="{'color':checkProductRating(item?.rate)>=4?'rgb(235, 138, 33)':''}"></i> 
-                           <i class="fa fa-star" [ngStyle]="{'color':checkProductRating(item?.rate)>=5?'rgb(235, 138, 33)':''}"></i>
-                    </div>
-                    <h2>{{item?.reviewTittle}}</h2>
-                    <p>{{item?.reviewComents}} </p>
-                    <span style="font-size:12px ;">{{item?.createAt|date}}</span>
-                         <hr>  
-                </ng-container>
-                
-                            <!-- <div class="ct-js-googleMap ct-googleMap ct-js-googleMap--single" data-offset="1" data-location="Richmond" data-icon="assets/images/marker-house.png" data-zoom="14" data-height="260" id="map"></div> -->
                         </div>
+                        
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3">
@@ -259,8 +249,22 @@
                                                     </ul>
                                                     <a href="/home/sellerContact?Id={{propertyDetails?.sellerId}}" class="btn btn-warning text-capitalize center-block">Contact Seller</a>
                                                 </div>
-                                               
+                                                <ng-container *ngFor="let item of allProductReviews">
+                                                    <span> <i class="fa fa-user"></i>{{item?.user}}</span>
+                                                    <div class="progress-icons" data-font-size="10" data-icon-color="#eb8a21" data-active="5" data-total="8" data-icon="fa-trophy" data-delay="400" style="font-size: 14px;">
+                                                        <i  class="fa fa-star" [ngStyle]="{'color':checkProductRating(item?.rate)>=1?'rgb(235, 138, 33)':''}"></i>
+                                                         <i class="fa fa-star" [ngStyle]="{'color':checkProductRating(item?.rate)>=2?'rgb(235, 138, 33)':''}"></i>
+                                                          <i class="fa fa-star" [ngStyle]="{'color':checkProductRating(item?.rate)>=3?'rgb(235, 138, 33)':''}"></i>
+                                                           <i class="fa fa-star" [ngStyle]="{'color':checkProductRating(item?.rate)>=4?'rgb(235, 138, 33)':''}"></i> 
+                                                           <i class="fa fa-star" [ngStyle]="{'color':checkProductRating(item?.rate)>=5?'rgb(235, 138, 33)':''}"></i>
+                                                    </div>
+                                                    <h2>{{item?.reviewTittle}}</h2>
+                                                    <p>{{item?.reviewComents}} </p>
+                                                    <span style="font-size:12px ;">{{item?.createAt|date}}</span>
+                                                         <hr>  
+                                                </ng-container>
                                             </div>
+                                          
                                         </div>
                                     </div>
                                 </div>
