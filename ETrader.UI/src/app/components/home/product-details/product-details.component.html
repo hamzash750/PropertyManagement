@@ -203,9 +203,9 @@
                             </div>
                            
                             <div class="ct-heading ct-u-marginBottom20">
-                                <button (click)="makePayment(propertyDetails?.price,propertyDetails?.tittle,propertyDetails?.sellerId,propertyDetails?.id)" class="btn btn-success btn-block">Pay PKR {{propertyDetails?.price}}</button>
+                                <button *ngIf="propertyDetails?.category=='Property for Rent'" (click)="makePayment(propertyDetails?.price,propertyDetails?.tittle,propertyDetails?.sellerId,propertyDetails?.id)" class="btn btn-success btn-block">Pay PKR {{propertyDetails?.price}}</button>
                           <br><br>
-                                <h3 class="text-uppercase">Reviews</h3>
+                                <h3 class="text-uppercase">Agents Reviews</h3>
                             </div>
                 <ng-container *ngFor="let item of allProductReviews">
                     <span> <i class="fa fa-user"></i>{{item?.user}}</span>

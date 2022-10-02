@@ -14,6 +14,7 @@ namespace ETrader.DAL.Model
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public int PropertyId { get; set; }
+        public int SellerId { get; set; }
         public int UserId { get; set; }
         public int Rate { get; set; }
         public string ReviewTittle { get; set; }

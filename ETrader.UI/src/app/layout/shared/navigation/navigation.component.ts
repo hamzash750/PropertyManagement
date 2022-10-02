@@ -9,12 +9,19 @@ export class NavigationComponent implements OnInit {
 
   constructor() { }
   user:any;
+  class="";
   ngOnInit(): void {
+    if( localStorage.getItem("navMenu")!=null){
+     this.class= localStorage.getItem("navMenu")?.toString()|| '';
+    }
     if(localStorage.getItem("userLogin")!=null){
       this.user=JSON.parse(localStorage.getItem("userLogin")?.toString()|| '{}');
     }else{
       this.user=null;
     }
+  }
+  setNavigation(value:string){
+    localStorage.setItem("navMenu",value);
   }
   logoutUser(){
     localStorage.clear();

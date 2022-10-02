@@ -1,3 +1,4 @@
+import { SellerReveiwsComponent } from './seller-reveiws/seller-reveiws.component';
 import { SenderFormComponent } from './sender-form/sender-form.component';
 import { PropertyReviewsComponent } from './property-reviews/property-reviews.component';
 import { propertyReview } from './models/propertyAdd';
@@ -37,6 +38,7 @@ const routes: Routes = [
   {path:"propertyReviews",component:PropertyReviewsComponent},
   {path:"sellerContact",component:SenderFormComponent},
   {path:"paymentSuccessfully",component:PaymentSuccessfullyComponent},
+  {path:"sellerReviews",component:SellerReveiwsComponent},
 ];
 
 @NgModule({

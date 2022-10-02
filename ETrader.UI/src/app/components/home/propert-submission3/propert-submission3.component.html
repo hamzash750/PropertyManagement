@@ -52,7 +52,10 @@
                         <label class="ct-fw-600 text-uppercase ct-u-marginBottom10">Set price of your property</label>
                         <div class="row">
                             <div class="col-md-9">
-                                <input type="number" formControlName="price" class="form-control input-lg ct-input--border ct-u-marginBottom20 form-control fx_dropdown" placeholder="">
+                                <input type="number" maxlength="3" 
+                                 min="0" max="100" formControlName="price"
+                                 (change)= "priceLimit($event)"
+                                  class="form-control input-lg ct-input--border ct-u-marginBottom20 form-control fx_dropdown" placeholder="">
                             </div>
                             <div class="col-md-3">
                                 <select class="form-control fx_dropdown" tabindex="-1" title="">
@@ -72,12 +75,12 @@
                                 </select>
                                 <span class="span ct-u-marginBottom10">Type</span>
                                 <select formControlName="type" class="form-control fx_dropdown" tabindex="-1" title="" >
-                                    <option value="-">-</option>
+                                    <option value="0">-</option>
                                     <option *ngFor="let item of propertyCategory" value="{{item?.id}}">{{item?.tittle}}</option>
                                 </select>
                                 <span class="span ct-u-marginBottom10">Baths</span>
                                 <select formControlName="bath" class="form-control fx_dropdown" tabindex="-1" title="">
-                                    <option value="-">-</option>
+                                    <option value="0">-</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3+</option>
@@ -94,14 +97,14 @@
                                 <input type="number" formControlName="area" class="form-control input-lg ct-input--border fx_dropdown" placeholder="">
                                 <span class="span ct-u-marginBottom10">Beds</span>
                                 <select formControlName="bed" class="form-control fx_dropdown" tabindex="-1" title="">
-                                    <option value="-">-</option>
+                                    <option value="0">-</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3+</option>
                                 </select>
                                 <span class="span ct-u-marginBottom10">Kitchens</span>
                                 <select formControlName="kitchen" class="form-control fx_dropdown" tabindex="-1" title="">
-                                    <option value="-">-</option>
+                                    <option value="0">-</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3+</option>

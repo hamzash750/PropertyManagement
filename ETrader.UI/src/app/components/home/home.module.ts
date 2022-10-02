@@ -34,6 +34,7 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { UserChatComponent } from './user-chat/user-chat.component';
 import { SenderFormComponent } from './sender-form/sender-form.component';
 import { PaymentSuccessfullyComponent } from './payment-successfully/payment-successfully.component';
+import { SellerReveiwsComponent } from './seller-reveiws/seller-reveiws.component';
 
 
 @NgModule({
@@ -66,7 +67,8 @@ import { PaymentSuccessfullyComponent } from './payment-successfully/payment-suc
     UserDashboardComponent,
     UserChatComponent,
     SenderFormComponent,
-    PaymentSuccessfullyComponent
+    PaymentSuccessfullyComponent,
+    SellerReveiwsComponent
   ],
   imports: [
     CommonModule,

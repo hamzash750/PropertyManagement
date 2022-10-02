@@ -24,14 +24,15 @@ saveRequest(){
     if(localStorage.getItem("userLogin")!=null){
       let  user=JSON.parse(localStorage.getItem("userLogin")?.toString()|| '{}');
       let obj={
-        "propertyId": Number(parm["Id"]),
+        "propertyId": 0,
         "userId": user?.userID,
         "rate": this.rate,
         "reviewTittle": this.title,
-        "reviewComents": this.description
+        "reviewComents": this.description,
+        "sellerId":Number(parm["Id"])
       }
       this._HomeServiceService.savePropertyReview(obj).subscribe(res=>{
-        location.href="/home/detail?id="+Number(parm["Id"])
+        location.href="/home/detail?id="+Number(parm["propertyId"])
       })
     }
     else{

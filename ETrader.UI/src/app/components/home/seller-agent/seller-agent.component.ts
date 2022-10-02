@@ -14,6 +14,8 @@ export class SellerAgentComponent implements OnInit {
     this._HomeServiceService.getAllAgent().subscribe(res=>{
       console.log(res)
       this.allAgent=res;
-    })
+    });
+    
   }
+ 
 }

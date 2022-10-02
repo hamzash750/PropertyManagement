@@ -1,9 +1,12 @@
 ﻿using ETrader.Business.Interface;
+using ETrader.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 
 namespace ETrader.API.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class UserController : Controller
     {
         private readonly IUserService _UserService;
@@ -19,6 +22,12 @@ namespace ETrader.API.Controllers
         {
             var propertyList = _UserService.getAllAgent();
             return Ok(propertyList);
+        }
+        [HttpPost, Route("SendAdmin")]
+        public IActionResult SendAdmin(ContactUsVM obj)
+        {
+           _UserService.sendAdminEmail(obj);
+            return Ok();
         }
     }
 }

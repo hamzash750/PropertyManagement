@@ -124,9 +124,9 @@ namespace ETrader.DAL.Migrations
                             Images = "house.jfif",
                             Kitchen = 0,
                             Location = "SAN FRANCISCO, CA 55689",
-                            ModifiedDate = new DateTime(2022, 9, 18, 14, 59, 26, 152, DateTimeKind.Local).AddTicks(6397),
+                            ModifiedDate = new DateTime(2022, 10, 2, 13, 4, 46, 10, DateTimeKind.Local).AddTicks(8021),
                             Pool = false,
-                            PostDate = new DateTime(2022, 9, 18, 14, 59, 26, 152, DateTimeKind.Local).AddTicks(7163),
+                            PostDate = new DateTime(2022, 10, 2, 13, 4, 46, 10, DateTimeKind.Local).AddTicks(8277),
                             Price = 1000000m,
                             Quantity = 20,
                             SellerId = 2,
@@ -145,9 +145,9 @@ namespace ETrader.DAL.Migrations
                             Images = "house.jfif",
                             Kitchen = 0,
                             Location = "SAN FRANCISCO, CA 55689",
-                            ModifiedDate = new DateTime(2022, 9, 18, 14, 59, 26, 152, DateTimeKind.Local).AddTicks(9489),
+                            ModifiedDate = new DateTime(2022, 10, 2, 13, 4, 46, 10, DateTimeKind.Local).AddTicks(8981),
                             Pool = false,
-                            PostDate = new DateTime(2022, 9, 18, 14, 59, 26, 152, DateTimeKind.Local).AddTicks(9497),
+                            PostDate = new DateTime(2022, 10, 2, 13, 4, 46, 10, DateTimeKind.Local).AddTicks(8986),
                             Price = 5000000m,
                             Quantity = 5,
                             SellerId = 2,
@@ -166,9 +166,9 @@ namespace ETrader.DAL.Migrations
                             Images = "house.jfif",
                             Kitchen = 0,
                             Location = "SAN FRANCISCO, CA 55689",
-                            ModifiedDate = new DateTime(2022, 9, 18, 14, 59, 26, 152, DateTimeKind.Local).AddTicks(9502),
+                            ModifiedDate = new DateTime(2022, 10, 2, 13, 4, 46, 10, DateTimeKind.Local).AddTicks(8989),
                             Pool = false,
-                            PostDate = new DateTime(2022, 9, 18, 14, 59, 26, 152, DateTimeKind.Local).AddTicks(9503),
+                            PostDate = new DateTime(2022, 10, 2, 13, 4, 46, 10, DateTimeKind.Local).AddTicks(8990),
                             Price = 2000000m,
                             Quantity = 10,
                             SellerId = 2,
@@ -258,7 +258,7 @@ namespace ETrader.DAL.Migrations
                         {
                             Id = 1,
                             BuyerId = 1,
-                            DateTime = new DateTime(2022, 9, 18, 14, 59, 26, 154, DateTimeKind.Local).AddTicks(5923),
+                            DateTime = new DateTime(2022, 10, 2, 13, 4, 46, 11, DateTimeKind.Local).AddTicks(4047),
                             Message = "Hello Any Room Available?",
                             SellerId = 2
                         },
@@ -266,7 +266,7 @@ namespace ETrader.DAL.Migrations
                         {
                             Id = 2,
                             BuyerId = 1,
-                            DateTime = new DateTime(2022, 9, 18, 14, 59, 26, 154, DateTimeKind.Local).AddTicks(7457),
+                            DateTime = new DateTime(2022, 10, 2, 13, 4, 46, 11, DateTimeKind.Local).AddTicks(4499),
                             Message = "Yes Availale!",
                             SellerId = 2
                         });
@@ -302,7 +302,7 @@ namespace ETrader.DAL.Migrations
                         new
                         {
                             Id = 1,
-                            DateTime = new DateTime(2022, 9, 18, 14, 59, 26, 154, DateTimeKind.Local).AddTicks(1186),
+                            DateTime = new DateTime(2022, 10, 2, 13, 4, 46, 11, DateTimeKind.Local).AddTicks(2612),
                             Description = "Need Room 5 * 5 Near Arfa Tower",
                             PriceExpectations = 4000,
                             Title = "Need Room",
@@ -332,6 +332,9 @@ namespace ETrader.DAL.Migrations
                     b.Property<string>("ReviewTittle")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("SellerId")
+                        .HasColumnType("int");
+
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
@@ -343,21 +346,23 @@ namespace ETrader.DAL.Migrations
                         new
                         {
                             Id = 1,
-                            CreateAt = new DateTime(2022, 9, 18, 14, 59, 26, 154, DateTimeKind.Local).AddTicks(9382),
+                            CreateAt = new DateTime(2022, 10, 2, 13, 4, 46, 11, DateTimeKind.Local).AddTicks(5183),
                             PropertyId = 1,
                             Rate = 4,
                             ReviewComents = "Very Good Experience",
                             ReviewTittle = "Product Re",
+                            SellerId = 0,
                             UserId = 2
                         },
                         new
                         {
                             Id = 2,
-                            CreateAt = new DateTime(2022, 9, 18, 14, 59, 26, 155, DateTimeKind.Local).AddTicks(3718),
+                            CreateAt = new DateTime(2022, 10, 2, 13, 4, 46, 11, DateTimeKind.Local).AddTicks(6682),
                             PropertyId = 2,
                             Rate = 5,
                             ReviewComents = "Excellent!",
                             ReviewTittle = "Product Quailty",
+                            SellerId = 0,
                             UserId = 3
                         });
                 });
@@ -405,7 +410,7 @@ namespace ETrader.DAL.Migrations
                             CategoryId = 2,
                             PaidAmount = 10000000m,
                             PropertyId = 1,
-                            PurchaseDase = new DateTime(2022, 9, 18, 14, 59, 26, 153, DateTimeKind.Local).AddTicks(3440),
+                            PurchaseDase = new DateTime(2022, 10, 2, 13, 4, 46, 11, DateTimeKind.Local).AddTicks(254),
                             Qty = 1,
                             SellerId = 2,
                             TransactionId = "123123123"
@@ -417,7 +422,7 @@ namespace ETrader.DAL.Migrations
                             CategoryId = 2,
                             PaidAmount = 40000000m,
                             PropertyId = 2,
-                            PurchaseDase = new DateTime(2022, 9, 18, 14, 59, 26, 153, DateTimeKind.Local).AddTicks(7197),
+                            PurchaseDase = new DateTime(2022, 10, 2, 13, 4, 46, 11, DateTimeKind.Local).AddTicks(1362),
                             Qty = 1,
                             SellerId = 2,
                             TransactionId = "34234234"
@@ -525,7 +530,7 @@ namespace ETrader.DAL.Migrations
                         {
                             Id = 1,
                             Address = "This is test Address",
-                            DateTime = new DateTime(2022, 9, 18, 14, 59, 26, 146, DateTimeKind.Local).AddTicks(8471),
+                            DateTime = new DateTime(2022, 10, 2, 13, 4, 46, 7, DateTimeKind.Local).AddTicks(9888),
                             Email = "jhon@gmail.com",
                             Name = "Jhon",
                             Password = "12345",
@@ -536,7 +541,7 @@ namespace ETrader.DAL.Migrations
                         {
                             Id = 2,
                             Address = "This is test Address",
-                            DateTime = new DateTime(2022, 9, 18, 14, 59, 26, 148, DateTimeKind.Local).AddTicks(4267),
+                            DateTime = new DateTime(2022, 10, 2, 13, 4, 46, 9, DateTimeKind.Local).AddTicks(1319),
                             Email = "Mark@gmail.com",
                             Name = "Mark",
                             Password = "43545",
@@ -547,7 +552,7 @@ namespace ETrader.DAL.Migrations
                         {
                             Id = 3,
                             Address = "This is test Address",
-                            DateTime = new DateTime(2022, 9, 18, 14, 59, 26, 148, DateTimeKind.Local).AddTicks(4306),
+                            DateTime = new DateTime(2022, 10, 2, 13, 4, 46, 9, DateTimeKind.Local).AddTicks(1341),
                             Email = "Smith@gmail.com",
                             Name = "Smith",
                             Password = "98765",

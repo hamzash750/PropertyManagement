@@ -84,6 +84,16 @@ saveOther(value:string){
 
  console.log(this.other)
 }
+priceLimit(event:any){
+  let userValue=event.target.value;
+  if(userValue<=0){
+    this.submissionFormSec.controls["price"].setValue(1);
+  }else if(userValue>=99999999999){
+    this.submissionFormSec.controls["price"].setValue(99999999999);
+  }else{
+    this.submissionFormSec.controls["price"].setValue(userValue);
+  }
+}
 checkValue(value:string):boolean{
   if(this.other!=undefined&&this.other!=null&& this.other.length>0){
     if(this.other.findIndex((x: string)=>x==value)>=0){

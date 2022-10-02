@@ -22,7 +22,7 @@ export class HomeServiceService {
     return this.http.get<any>(this.mainUrl+'GetAllPropertyCategory');
   }
   getAllAgent(): Observable<any> {
-    return this.http.get<any>(this.mainUrl+'GetAllAgent');
+    return this.http.get<any>(this.mainUrl+'User/GetAllAgent');
   }
   getCategoryProperty(id:number): Observable<propertyAdd[]> {
     return this.http.get<propertyAdd[]>(this.mainUrl+'Property/PropertyCategoryList?Id='+id);
@@ -74,5 +74,8 @@ export class HomeServiceService {
   }
   submitPayment(data:any): Observable<any> {
     return this.http.post(this.mainUrl+'Payment/PostPaymentToken',data);
+  }
+  sendContactUsEmail(data:any): Observable<any> {
+    return this.http.post<any>(this.mainUrl+'User/SendAdmin',data);
   }
 }

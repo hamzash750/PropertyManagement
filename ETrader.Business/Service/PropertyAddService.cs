@@ -71,7 +71,7 @@ namespace ETrader.Business.Service
             var prodcut = from p in context.PropertyReviews
                           join user in context.Users
                           on p.UserId equals user.Id
-                          where p.PropertyId.Equals(id)
+                          where p.SellerId.Equals(id)
                           select new ProductReviewsVM
                           {
                               CreateAt = p.CreateAt,
@@ -97,6 +97,7 @@ namespace ETrader.Business.Service
             }
             else
             {
+
                 var add = context.PropertyAds.Add(propertyAds);
                 context.SaveChanges();
             }

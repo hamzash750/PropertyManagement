@@ -22,15 +22,16 @@ export class ProductDetailsComponent implements OnInit,OnDestroy,AfterViewInit {
       this._homeService.getPropertyDetails(Number(parm["id"])).subscribe(data=>{
         this.propertyDetails=data;
         this.other=JSON.parse(this.propertyDetails?.otherAmenites)
+        this._homeService.getPropertyReviews(Number( this.propertyDetails?.sellerId)).subscribe(data=>{
+          this.allProductReviews=data;
+          if(localStorage.getItem("token")!=null){
+            let  token=JSON.parse(localStorage.getItem("token")?.toString()|| '{}');
+            this.makePaymentCall(token?.name,token?.token,token?.price,token?.sellerId);
+            localStorage.removeItem("token");
+          }
+        });
       });
-      this._homeService.getPropertyReviews(Number(parm["id"])).subscribe(data=>{
-        this.allProductReviews=data;
-        if(localStorage.getItem("token")!=null){
-          let  token=JSON.parse(localStorage.getItem("token")?.toString()|| '{}');
-          this.makePaymentCall(token?.name,token?.token,token?.price,token?.sellerId);
-          localStorage.removeItem("token");
-        }
-      });
+    
     })
    
   }

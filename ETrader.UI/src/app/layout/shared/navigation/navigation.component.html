@@ -230,13 +230,13 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav ct-navbar--fadeInUp">
-                <li class="dropdown active"><a href="/home">Home</a>
+                <li  class="dropdown" (click)="setNavigation('home')" [class.active]="class=== 'home'"><a href="/home">Home</a>
                  
                 </li>
-                <li class="dropdown "><a href="/home/category">Property</a> </li>
-                <li class="dropdown "><a href="/home/seller">Agents</a> </li>
-                <li class="dropdown "><a href="/home/propertyFinder">Property Finder Ads</a> </li>
-                <li class="dropdown"><a href="/home/contact">Contact Us</a></li>
+                <li class="dropdown " (click)="setNavigation('Property')" [class.active]="class=== 'Property'"><a href="/home/category">Property</a> </li>
+                <li class="dropdown " (click)="setNavigation('Agents')" [class.active]="class=== 'Agents'"><a href="/home/seller">Agents</a> </li>
+                <li class="dropdown " (click)="setNavigation('Finder')" [class.active]="class=== 'Finder'"><a href="/home/propertyFinder">Property Finder Ads</a> </li>
+                <li class="dropdown" (click)="setNavigation('Contact')" [class.active]="class=== 'Contact'"><a href="/home/contact">Contact Us</a></li>
             </ul>
             <a *ngIf="user!=null" class="btn btn-primary btn-transparent--border ct-u-text--motive" (click)="newSubmission()" href="/home/submission">Add Property</a>
         </div>

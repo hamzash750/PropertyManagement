@@ -1,4 +1,5 @@
 ﻿using ETrader.DAL.Model;
+using ETrader.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,6 @@ namespace ETrader.Business.Interface
     public interface IUserService
     {
         List<User> getAllAgent ();
+        void sendAdminEmail(ContactUsVM obj);
     }
 }
